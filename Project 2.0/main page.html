@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+      <meta charset="utf-8"/>
+      <title>Toll Payment</title>
+      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+      <link href="style.css" type="text/css" rel="stylesheet">
+<style>
+    #grad{
+        background-image: linear-gradient(to bottom right,#7FFF00,greenyellow);
+    }
+    .button{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: mediumseagreen;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.container {
+  position:relative;
+  width: 50%;
+ margin-left: 350px;
+    
+}
+
+.image {
+  display: block;
+  width: 80%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: orangered;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:active .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.object {
+    position: absolute;
+}
+.van {
+    top: 45%;
+    left: 30%;
+    margin-top: 170px;
+}
+#axis:hover .move-right{
+    transform: translate(500px,0);
+    -webkit-transform: translate(500px,0); /** Chrome & Safari **/
+    -o-transform: translate(500px,0); /** Opera **/
+    -moz-transform: translate(500px,0); /** Firefox **/
+}
+.object {
+    position: absolute;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
+}
+img{
+height:50px;
+width:auto;
+}
+</style>
+</head>
+<body id="grad">
+<div class="flex-container">
+<div class="top">
+	<h1>PREPTO</h1>
+   
+</div>
+<div class="means">
+	<h3><i>Pre Payment of Toll</i></h3>
+</div>
+ <div class="container">
+  <img src="toll.jpg" alt="toll" class="image"> 
+  <div class="overlay">
+    <div class="text">Welcome You All</div>
+  </div>
+</div>
+        <div id="axis" class="one">
+<img class="object van move-right" src="C:\Users\ASUS\OneDrive\Desktop\WT\js\car.png"/>
+</div>
+<div class="register">
+	<h3>Please get your vehicle Registered here.</h3>
+</div>
+<table align="center">
+<tr>
+<td>
+<form action="registeration.html">
+<button class="button" style="vertical-align:middle"><span>Register Here </span></button>
+</form>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
